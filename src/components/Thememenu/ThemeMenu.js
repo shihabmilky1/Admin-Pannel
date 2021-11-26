@@ -102,8 +102,8 @@ const ThemeMenu = () => {
     }
 
     useEffect(() => {
-        const themeClass = mode_settings.find(e => e.class === localStorage.getItem('themeMode', 'theme-mode-light'))
-        const colorClass = mode_settings.find(e => e.class === localStorage.getItem('colorMode', 'theme-mode-light'))
+        const themeClass = mode_settings.find(e => e.class === localStorage.getItem('theme', 'theme-mode-light'))
+        const colorClass = color_settings.find(e => e.class === localStorage.getItem('colorMode', 'theme-mode-light'))
 
         if (themeClass !== undefined) { setCurrMode(themeClass.id) }
         if (colorClass !== undefined) { setCurrColor(colorClass.id) }
